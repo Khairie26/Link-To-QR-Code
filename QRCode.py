@@ -12,12 +12,12 @@ form = cgi.FieldStorage()
 link = str(form.getvalue('link'))
 # link = "https://web.facebook.com/muhammad.khairie.733"
 qr_code = pyqrcode.create(link)
-qr_code.png("instagram.png", scale=5)
+qr_code.png("QRCode.png", scale=5)
 
 
 print('<html>')
 print('<body>') 
 print('<fieldset><legend><h1>Your QR Code</h1></legend>')
-print('<center><img src="instagram.png" width="30%" height="30%"> </center></fieldset>')
+print('<center><img src="QRCode.png" width="30%" height="30%"> </center></fieldset>')
 print('</body>')
 print('</html>')
