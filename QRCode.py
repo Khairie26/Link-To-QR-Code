@@ -10,7 +10,6 @@ cgitb.enable()
 print('Content-Type: text/html\r\n\r\n')
 form = cgi.FieldStorage()
 link = str(form.getvalue('link'))
-# link = "https://web.facebook.com/muhammad.khairie.733"
 qr_code = pyqrcode.create(link)
 qr_code.png("QRCode.png", scale=5)
 
